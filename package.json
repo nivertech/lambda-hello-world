@@ -1,0 +1,14 @@
+{
+  "name": "lambda-hello-world",
+  "version": "0.0.1",
+  "description": "Lambda Hello World test with npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache License Version 2.0",
+  "dependencies": {
+    "eyes": "^0.1.8"
+  }
+}
