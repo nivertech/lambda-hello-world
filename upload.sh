@@ -5,6 +5,9 @@
 ## @author Zvi Avraham <zvi-AT-zadata-DOT-com>
 ## @copyright 2014 ZADATA Ltd. All Rights Reserved.
 
+## See:
+## http://www.slideshare.net/chris.e.richardson/aws-lambda-a-quick-introduction/13
+
 set -e
 
 cd `dirname $0`
@@ -39,7 +42,7 @@ rm -rf node_modules/
 npm install
 
 rm -f ${FUNCTION_ZIP}
-zip ${FUNCTION_ZIP} *
+zip -r ${FUNCTION_ZIP} *.js node_modules @ --exclude=*aws-sdk*
 
 aws lambda upload-function  \
 	--function-name "$FUNCTION" \
