@@ -26,10 +26,10 @@ echo "FUNCTION_ZIP = ${FUNCTION_ZIP}"
 echo "FUNCTION_HANDLER = ${FUNCTION_HANDLER}"
 
 # TODO: handle recursive CoffeeScript compilation
-# TODO: delete olf generated .js files
+# TODO: delete old generated .js files
 # TODO: maybe use grunt, gulp or brocolli
 
-# TODO: handle case when plai JS - no CoffeeScript
+# TODO: handle case when plain JS - no CoffeeScript
 files=(*.coffee)
 if [ -e "${files[0]}" ]; then
 	coffee -b -c *.coffee
