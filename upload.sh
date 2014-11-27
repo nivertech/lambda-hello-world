@@ -17,8 +17,8 @@ FUNCTION_ZIP="$FUNCTION.zip"
 #FUNCTION_HANDLER="$FUNCTION.handler"
 FUNCTION_HANDLER="index.handler"
 
-# NOTE: use your own execution role
-lambda_execution_role_arn="arn:aws:iam::************:role/lambda_exec_role"
+# NOTE: use your own IAM lambda execution role
+#lambda_execution_role_arn="arn:aws:iam::************:role/lambda_exec_role"
 
 
 MEMORY_SIZE=128
