@@ -9,6 +9,7 @@
   "author": "Zvi Avraham",
   "license": "Apache License Version 2.0",
   "dependencies": {
+    "aws-sdk": "^2.0.29",
     "eyes": "^0.1.8"
   }
 }
